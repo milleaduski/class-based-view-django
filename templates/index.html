@@ -4,6 +4,11 @@
 	<title> Python:: Class based view</title>
 </head>
 <body>
-<h1>This is the page rendered in class based view and it will be first series</h1>
+<h1>This is form for submit post method</h1>
+<form method="post">
+	{% csrf_token %}
+	<button type="submit" name="button">Submit</button>
+
+</form>
 </body>
 </html>

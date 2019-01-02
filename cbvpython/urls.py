@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path
 
-from django.views.generic import TemplateView
+from .views import IndexView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tutorial/', TemplateView.as_view(template_name='index.html'))
+    path('tutorial/', IndexView.as_view())
 ]
